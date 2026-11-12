@@ -1,0 +1,48 @@
+{
+  "name": "oracle-vm-manager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "provision:admin": "tsx scripts/provision-admin.ts"
+  },
+  "dependencies": {
+    "@node-rs/argon2": "^2.2.2",
+    "drizzle-orm": "^0.44.0",
+    "lucide-react": "^0.468.0",
+    "next": "^15.3.0",
+    "oci-common": "^2.146.0",
+    "oci-core": "^2.146.0",
+    "postgres": "^3.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "server-only": "^0.0.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.0",
+    "@playwright/test": "^1.65.0",
+    "@tailwindcss/postcss": "^4.0.17",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "drizzle-kit": "^0.31.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.3.0",
+    "happy-dom": "^21.0.4",
+    "jsdom": "^31.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  }
+}
